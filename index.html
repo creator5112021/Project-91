@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess The Word</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Gwendolyn:wght@700&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="game.css">
+
+<script>
+function trans() {
+    window.location = "How to play.html"
+}
+function log_in() {
+    player1_name = document.getElementById("Username1").value;
+    player2_name = document.getElementById("Username2").value;
+
+    localStorage.setItem("player1_name", player1_name)
+    localStorage.setItem("player2_name", player2_name)
+
+    window.location = "intro.html"
+}
+</script>
+</head>
+<body>
+	<center>
+		<a class="ant btn btn-primary" href="How to play.html">How to play</a>
+		<label id="alabel">Scroll down to log in </label>
+		<img src="https://cdn.dribbble.com/users/5754622/screenshots/15778294/media/c02d0eea1025c4279d0fb7359e41bafd.png?compress=1&resize=400x300" width="1380" id="img_head">
+		<h1 class="Game">Game</h1>
+<div class="col-lg-4 col-sm-8 col-xs-11 login_div1">
+	<h3 id="header">Player 1 login for the game</h3>
+	<label id="username">Username:</label>
+	<input type="text" id="Username1" class="form-control" placeholder="Player 1 username">
+</div>
+<br>
+<br>
+<br>
+<div class="col-lg-4 col-sm-8 col-xs-11 login_div2">
+	<h3 id="header">Player 2 login for the game</h3>
+	<label id="username">Username:</label>
+	<input type="text" id="Username2" class="form-control" placeholder="Player 2 username">
+
+</div>
+<br>
+<button class=" btn_log btn btn-primary" id="loginButton" onclick="log_in()">Log in</button>
+<br>
+<br>
+</center>
+</body>
+</html>

@@ -1,0 +1,111 @@
+body
+{
+	background-image : url(https://t3.ftcdn.net/jpg/00/88/98/18/360_F_88981880_YjJManMJ6hJmKr5CZteFJAkEzXIh8mxW.jpg) ;
+}
+
+	.login_div1 , .login_div2
+	{
+		color: white;
+		font-family: 'Gwendolyn', cursive;
+		background: transparent;
+		padding: 10px;
+		float: none;
+		border-radius: 15px;
+	}
+
+
+#player1_name , #player2_name
+{
+	display: inline-block;
+	margin-left: 20px;
+}
+#word
+{
+	width: 60%;
+}
+#word_display
+{
+	letter-spacing: 5px;
+}
+#output
+{
+background: white;
+border-radius: 10px;
+border-top: 10px solid #AA4465;
+padding: 10px;
+float: none;
+text-align: left;
+}
+#username{
+	font-size: 30px;
+}
+#header{
+	font-size: 40px;
+}
+#Username1, #Username2{
+	font-size: 20px;
+}
+.Game{
+	color: white;
+	font-size: 90px;
+	font-family: 'Coming Soon', cursive;
+}
+.btn_log{
+	font-size: 30px;
+	}
+/* Animation part (My additional activity) starts*/
+#alabel{
+	margin-left: 20px;
+	margin-top: 5px;
+	padding: .5em 1.5em;
+	border: 0;
+	border-radius: .1em;
+	animation: slideMe .8s ease-in;
+}
+
+
+@keyframes slideMe{
+	0%{
+     transform: skewX(53deg) translateX(-500px);
+	}
+    60%{
+	 transform: translateX(0px);
+	}
+	62%{
+	 transform: skewX(0deg) translateX(30px)
+	}
+	70%{
+	 transform: skew(-20deg);
+	 opacity: 1;
+	}
+	80%{
+	 transform: skew(0deg) translate(0);
+	}
+	90%{
+	 transform: skew(-5deg);
+	}
+	100%{
+     transform: skew(0deg);
+	}
+}
+/* Animation (My additional activity) part ends */
+
+/* Ma'am I learnt this animation from youtube, I hope you like it video_url(https://www.youtube.com/watch?v=yoO0OGuEeHs)*/ 
+#img_head{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.nav-link{
+	float: right;
+	margin-left: 0px;
+	background-color: aqua;
+	border-radius: 400;
+	border-color: black;
+	border-width: 3;
+}
+.ant{
+	float: right;
+	float: top;
+	margin-top: 5px;
+	margin-right:5px;
+}
